@@ -13,15 +13,19 @@
     --color-top: rgb(80, 1, 1);
     --color-text: whitesmoke;
     --select-text: white;
-    --second-color: rgb(13, 24, 175);
+    --second-color: #282828;
+}
+
+main{
+    width: 100%;
 }
 
 .navbar{
     display: flex;
     justify-content: space-around;
     box-shadow: -3px 2px 8px;
-    max-width: 100VW;
-    width: 100vw;
+    max-width: 100%;
+    width: 100%;
     background-color: var(--color-top);
     opacity: 0.8;
 }
@@ -72,7 +76,7 @@ body {
     flex-direction: column;
 }
 
-/* ----------Hero section------------- */
+/* ---------- Hero section------------- */
 
 #hero{
     display: flex;
@@ -94,24 +98,29 @@ body {
     max-width: 1200px;
     width: 90%;
     color: var(--color-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-shadow: 5px 3px 2px black;
 }
 
+/* ---------------- CATALOGO ---------------- */
 #catalogo{
     display: flex;
     max-width: 100%;
     width: 100%;
-    height: 200px;
+    height: 150px;
     justify-content: center;
     align-items: center;
-    background-color: crimson;
+    background-color: var(--second-color);
 }
 
 .cat-list{
     display: flex;
+    justify-content: center;
     max-width: 1200px;
     width: 100%;
     align-items: center;
-    gap: 100px;
+    gap: 10%;
 }
 
 .cat-boton{
@@ -122,5 +131,43 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 10px;
-    
+    box-shadow: 3px 5px 2px 2px black;
+}
+
+.cat-boton a{
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+/* ----------- Section products-------------- */
+
+/* ----------- Section Nosotros-------------- */
+
+#nosotros{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    gap: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--color-top);
+    color: var(--color-text);
+    font-weight: 500;
+    padding: 10% 5%;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    background-color: var(--second-color);
 }
