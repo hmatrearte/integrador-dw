@@ -10,7 +10,7 @@
 /* Roots */
 
 :root {
-    --color-top: rgb(80, 1, 1);
+    --color-top: #9d2d29;
     --color-text: whitesmoke;
     --select-text: white;
     --second-color: #282828;
@@ -27,7 +27,8 @@ main{
     max-width: 100%;
     width: 100%;
     background-color: var(--color-top);
-    opacity: 0.8;
+    opacity: 0.9;
+    height: auto;
 }
 
 .navbar img{
@@ -76,7 +77,7 @@ body {
 #hero{
     display: flex;
     max-width: 100%;
-    height: 500px;
+    height: 600px;
     justify-content: center;
     align-items: center;
     background-image: url("./Assets/img-hero/fotoszapaz.jpg");
@@ -98,35 +99,72 @@ body {
     text-shadow: 5px 3px 2px black;
 }
 
+.portada h2{
+    font-size: 4rem;
+    display: inline-block;
+    background-color: var(--color-top);
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    opacity: 0.9;
+}
+.portada p{
+    font-size: 2rem;
+}
+
+
 /* ---------------- CATALOGO ---------------- */
 #catalogo{
     display: flex;
-    max-width: 100%;
-    width: 100%;
-    height: 150px;
+    max-height: 200px;
     justify-content: center;
     align-items: center;
-    background-color: var(--second-color);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cat-conteiner{
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
 }
 
 .cat-list{
     display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    gap: 10%;
+    gap: 15px;
+    margin-top: 100px;
 }
 
 .cat-boton{
+    background-color: var(--color-top);
     border: 2px solid black;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 10px;
+    max-width: 200px;
+    width: 200px;
+    max-height: 100px;
+    height: 100px;
+    padding: 30px 5px;
+    text-align: center;
     box-shadow: 3px 5px 2px 2px black;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.cat-boton:hover{
+    scale: 1.2;
 }
 
 .cat-boton a{
@@ -135,22 +173,109 @@ body {
     color: aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
+    font-size: 20px;
 }
 
 /* ----------- Section products-------------- */
+#productos{
+    display: flex;
+    /*padding: 100px 0;
+    */max-width: 1200px;
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid var(--second-color);
+    border-radius: 15px;
+    margin: 10%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#productos h3{
+    display: inline-block;    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: skyblue; */
+    gap: 15px;
+    width: 1200px;
+    height: 500px;
+}
+
+.products-card{
+    background-color: var(--color-top);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.products-card:hover{
+    box-shadow: -2px 7px 6px var(--second-color);
+    scale: 1.1;
+}
+
+.product-img{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
 /* ----------- Section Nosotros-------------- */
 
 #nosotros{
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 100%;
     gap: 5%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: var(--color-top);
+    /* background-color: var(--color-top); */
     color: var(--color-text);
     font-weight: 500;
-    padding: 10% 5%;
+    padding: 5% 5%;
+}
+
+.nosotros-img{
+    width: 250px;
+}
+
+.texto{
+    /* width: 7 */
+    background-color: var(--color-top);
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+    padding: 90px 20px;
+    font-size: 1.3rem;
+    text-align: center;
 }
 /* ----------- Section FAQS-------------- */
 #faqs{
@@ -161,13 +286,19 @@ body {
     padding: 2% 5% 5%;
 }
 
+.faqs-conteiner{
+    margin: 25px;
+
+}
 .titulo{
     color: var(--color-text);
     background-color: var(--color-top);
     width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
+    font-size: 2rem;
     text-align: center;
+    margin: 15px;
     padding: 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -181,21 +312,25 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     padding-top: 25px;
+    font-size: 1.5rem;
 }
 
 .pregunta::before{
     content:'🧦';
 }
+
+
 /* footer */
 
 footer{
     display: flex;
     max-width: 100%;
     width: 100%;
-    height: 100px;
+    /* height: 50px; */
     align-items: center;
-    padding: 5%;
+    padding: 2%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     background-color: var(--second-color);
+    color: var(--color-text);
 }
