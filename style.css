@@ -17,7 +17,13 @@
 }
 
 main{
-    width: 100%;
+    width: 1200px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .navbar{
@@ -28,7 +34,6 @@ main{
     width: 100%;
     background-color: var(--color-top);
     opacity: 0.9;
-    height: auto;
 }
 
 .navbar img{
@@ -83,6 +88,7 @@ body {
     background-image: url("./Assets/img-hero/fotoszapaz.jpg");
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: -3px 2px 8px;
 }
 
 .portada {
@@ -179,8 +185,7 @@ body {
 /* ----------- Section products-------------- */
 #productos{
     display: flex;
-    /*padding: 100px 0;
-    */max-width: 1200px;
+    max-width: 1200px;
     width: 100%;
     height: 600px;
     flex-direction: column;
@@ -189,11 +194,12 @@ body {
     background-color: white;
     border: 2px solid var(--second-color);
     border-radius: 15px;
-    margin: 10%;
+    /* margin: 10%; */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    box-shadow: -3px 2px 8px;
 }
 
 #productos h3{
@@ -205,8 +211,8 @@ body {
     align-items: center;
     /* background-color: skyblue; */
     gap: 15px;
-    width: 1200px;
-    height: 500px;
+    /* width: 1200px; */
+    /* height: 500px; */
 }
 
 .products-card{
@@ -216,7 +222,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -228,6 +234,7 @@ body {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     font-size: 15px;
+    color: var(--color-text);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -265,8 +272,7 @@ body {
     width: 250px;
 }
 
-.texto{
-    /* width: 7 */
+.nosotros-texto{
     background-color: var(--color-top);
     border-radius: 11px;
     -webkit-border-radius: 11px;
@@ -276,6 +282,7 @@ body {
     padding: 90px 20px;
     font-size: 1.3rem;
     text-align: center;
+    box-shadow: -3px 3px 10px black;
 }
 /* ----------- Section FAQS-------------- */
 #faqs{
@@ -284,27 +291,33 @@ body {
     max-width: 100%;
     flex-direction: column;
     padding: 2% 5% 5%;
+    box-shadow: -3px 2px 8px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
 }
 
 .faqs-conteiner{
     margin: 25px;
-
 }
 .titulo{
     color: var(--color-text);
     background-color: var(--color-top);
-    width: 100%;
+    width: 1000px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
-    margin: 15px;
+    margin: 15px 10px 40px 10px;
     padding: 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    box-shadow: -3px 3px 8px black;
 }
 
 .pregunta{
@@ -324,7 +337,7 @@ body {
 
 footer{
     display: flex;
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
     /* height: 50px; */
     align-items: center;
@@ -333,4 +346,5 @@ footer{
     font-weight: 500;
     background-color: var(--second-color);
     color: var(--color-text);
+    box-shadow: -3px 2px 10px black;
 }
