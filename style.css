@@ -11,8 +11,8 @@
 
 :root {
     --color-top: #9d2d29;
-    --color-text: whitesmoke;
-    --select-text: white;
+    --fondo: whitesmoke;
+    --color-text: white;
     --second-color: #282828;
 }
 
@@ -75,7 +75,7 @@ header{
 }
 
 .navbar a:hover{
-    color: var(--select-text);
+    color: var(--color-text);
     font-weight: 600;
     background-color: #802421;
 }
@@ -88,7 +88,7 @@ header{
 
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--fondo);
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -142,8 +142,6 @@ body {
     -o-transition: 0.5s;
 }
 .portada h2:hover{
-    /* opacity: 1;
-    outline: none; */
     border: 2px solid var(--second-color);
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -152,37 +150,38 @@ body {
     -o-border-radius: 25px;
     box-shadow: -3px 2px 8px var(--second-color);
 }
-/* .portada p{
-    font-size: 2rem;
-} */
 
 
 /* ---------------- MENU CATALOGO ---------------- */
 #catalogo, #info-compra{
     display: flex;
     max-width: 1200px;
-    max-height: 200px;
+    max-height: 600px;
+    width: 100%;
+    height: 600px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 80px;
+    /* background-color: crimson; */
 }
 
 .cat-conteiner, .info-conteiner{
     display: flex;
-    width: 100%;
+    width: 100px;
     height: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 15px;
-    /* background-color: crimson; */
+    /* gap: 15px; */
+    /* background-color: lawngreen; */
 }
 
 .cat-list, .info-compra-list{
     display: flex;
+    width: 1200px;
     gap: 15px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    /* background-color: crimson; */
 }
 
 .cat-boton{
@@ -193,9 +192,9 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    max-width: 200px;
-    width: 200px;
-    max-height: 100px;
+    max-width: 250px;
+    width: 250px;
+    max-height: 150px;
     height: 100px;
     padding: 30px 5px;
     text-align: center;
@@ -255,7 +254,8 @@ body {
 }
 
 .products-card{
-    background-color: var(--color-top);
+    background-color: var(--color-text);
+    border: 1px solid var(--second-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,8 +273,9 @@ body {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     font-size: 15px;
-    color: var(--color-text);
+    color: var(--second-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 10px;
 }
 
 .products-card:hover{
@@ -290,6 +291,24 @@ body {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.boton-enviar{
+    background-color: var(--color-top);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-size: 20px;
+    font: 700;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: -2px 2px 8px var(--second-color);
+}
+
+.boton-enviar a{
+    color: var(--color-text);
 }
 
 /* ----------- Nosotros-------------- */
@@ -383,22 +402,24 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
-    width: 350px;
-    height: 250px;
-    gap: 5px;
+    width: 450px;
+    height: 300px;
+    gap: 10px;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px;
-    font-size: 20px;
+    /* padding: 15px; */
+    font-size: 25px;
     font-weight: 600;
+    /* background-color: crimson; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    margin: 200px 0 150px 0;
 }
 
 .info-compra-img {
     display: flex;
-    max-width: 150px;
+    max-width: 270px;
 }
+
 /* -------------- CONTACTO---------------- */
 
 #contact{
@@ -407,14 +428,13 @@ body {
     justify-content: center;
     max-width: 1200px;
     width: 100%;
-    height: 350px;
-    margin-top: 15px;
+    height: 500px;
+    /* margin-top: 15px; */
 }
 
 .contact-container{
     display: flex;
-    /*background-color: crimson;
-    */gap:400px;
+    gap:350px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -431,11 +451,54 @@ body {
     -o-border-radius: 15px;
 }
 
-.mensaje-container{
+.contact-container input{
+    border-bottom: 1px solid var(--second-color);
+    background-color: var(--fondo);
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    /* outline: none; */
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.mensaje-container, .container-login{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 5px;
+    width: 300px;
+}
+
+.mensaje-container h3{
+    background-color: var(--color-top);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: var(--color-text);
+    font-size: 25px;
+    font: 700;
+    text-align: center;
+    padding: 3px;
+}
+
+.mensaje-container a{
+    color: var(--color-text);   
+}
+
+.form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 5px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .redes-list{
@@ -451,12 +514,13 @@ footer{
     max-width: 1200px;
     width: 100%;
     height: 100px;
+    /* margin-top: 40px; */
     align-items: center;
     box-shadow: -3px 2px 10px black;
 }
 
 .footer{
-    color: var(--color-text);
+    color: var(--fondo);
     font-size: 20px;
     font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -465,4 +529,36 @@ footer{
 
 .footer span{
     color: skyblue;
+}
+
+
+/* ----------- LOGIN ------------ */
+
+.container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--second-color);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: -3px 2px 10px var(--second-color);
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+.titu-login{
+    background-color: var(--color-top);
+    color: var(--color-text);
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

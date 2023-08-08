@@ -12,12 +12,12 @@
             <nav class="navbar">
                 <img class="logo" src="./Assets/img/jimmie_jpg_fondoblanco.jpg" alt="logo">
                 <ul class="navbar-list">
-                    <li><a href="#" class="">Inicio</a></li>
-                    <li><a href="#" class="">Catalogo</a></li>
-                    <li><a href="#" class="">Nosotros</a></li>
-                    <li><a href="#" class="">Contacto</a></li>
-                    <li><a href="#" class="">FAQs</a></li>
-                    <li><a href="#" class="">Ingresar</a></li>
+                    <li><a href="#hero" class="">Inicio</a></li>
+                    <li><a href="#catalogo" class="">Catalogo</a></li>
+                    <li><a href="#nosotros" class="">Nosotros</a></li>
+                    <li><a href="#faqs" class="">FAQs</a></li>
+                    <li><a href="#contact" class="">Contacto</a></li>
+                    <li><a href="./login.html" class="">Ingresar</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,9 +49,9 @@
                         <h3>Soquetes Messi</h3>
                         <h4>Precio</h4>
                         <p>Soquetes de algodon, talle adulto (35 a 43)</p>
-                    </div>
-                    <div class="agregar-carrito">
-                        <p>Agregar a carrito</p>
+                        <div class="boton-enviar">
+                            <a href="#">Agregar a carrito</a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -60,9 +60,9 @@
                         <h3>Medias Snoopy Vans</h3>
                         <h4>Precio</h4>
                         <p>Media de algodon, talle adulto (35 a 43)</p>
-                    </div>
-                    <div class="agregar-carrito">
-                        <p>Agregar a carrito</p>
+                        <div class="boton-enviar">
+                            <a href="#">Agregar a carrito</a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -71,9 +71,9 @@
                         <h3>Zapas Tipo Vans Rojas</h3>
                         <h4>Precio</h4>
                         <p>Zapas urbanas, talle 37 a 43</p>
-                    </div>
-                    <div class="agregar-carrito">
-                        <p>Agregar a carrito</p>
+                        <div class="boton-enviar">
+                            <a href="#">Agregar a carrito</a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -82,10 +82,10 @@
                         <h3>Remera Oversize Negra</h3>
                         <h4>Precio</h4>
                         <p>Remeras Oversize, talle S a XXL</p>
+                        <div class="boton-enviar">
+                            <a href="#">Agregar a carrito</a>
+                        </div>                    
                     </div>
-                    <div class="agregar-carrito">
-                        <p>Agregar a carrito</p>
-                    </div>                    
                 </div>
             </div>
         </section>
@@ -154,23 +154,27 @@
         <section id="contact">
             <div class="contact-container">
                 <div class="mensaje-container">
-                    <label for="name"> Nombre
-                        <input type="text" id="name">
-                    </label>
-                    <label for="mail"> Mail
-                        <input type="email" id="mail">
-                    </label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10">Mensaje</textarea>
-                    <input type="submit" value="enviar">
+                    <h3>Dejanos tu mensaje</h3>
+                    <form class="form">
+                        <label for="name"> Nombre
+                            <input type="text" id="name">
+                        </label>
+                        <label for="mail"> Mail
+                            <input type="email" id="mail">
+                        </label>
+                        <textarea name="mensaje" id="mensaje" cols="35" rows="10">Mensaje</textarea>
+                        <a href="#" class="boton-enviar">Enviar</a>
+                    </form>
                 </div>
                 <div class="redes">
-                    <h3>Nuestras Redes
-                        <ul class="redes-list">
-                            <li><img class="logo" src="./Assets/img/instagram.jpg" alt="logo instagram"></li>
-                            <li><img class="logo" src="./Assets/img/facebook.jpg" alt="logo de facebook"></li>
-                            <li><img class="logo" src="./Assets/img/spotify.jpg" alt="logo de spotify"></li>
+                    <h3>Nuestras Redes</h3>
+                    <ul class="redes-list">
+                            <li><a href="#"><img class="logo" src="./Assets/img/instagram.jpg" alt="logo instagram"></a></li>
+                            <li><a href="#"><img class="logo" src="./Assets/img/facebook.jpg" alt="logo de facebook"></a></li>
+                            <li><a href="#"><img class="logo" src="./Assets/img/spotify.jpg" alt="logo de spotify"></a></li>
                         </ul>
-                    </h3>
+                        <h3>Ubicación</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.13575171452!2d-65.22259365!3d-26.832858899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1691458990804!5m2!1ses!2sar" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
