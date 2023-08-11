@@ -46,6 +46,25 @@ header{
     opacity: 1;
 }
 
+.cart-icon{
+    font-size: 30px;
+    padding: 20px;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.toggle-menu{
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+#cart-toggle{
+    display: none;
+}
+
 .logo{
     display: flex;
     max-width: 60px;
@@ -314,11 +333,8 @@ body {
     font: 700;
     text-align: center;
     padding: 5px 10px;
-    box-shadow: -2px 2px 8px var(--second-color);
-}
-
-.boton-enviar a{
-    color: var(--color-text);
+    box-shadow: -2px 2px 8px var(--second-color); 
+    color: var(--color-text);   
 }
 
 /* ----------- Nosotros-------------- */
@@ -614,7 +630,6 @@ footer{
     border-right: none;
     border-top: none;
     border-left: none;
-    /* outline: none; */
     padding: 5px 15px;
     font-size: 18px;
     font-weight: 500;
@@ -635,7 +650,8 @@ footer{
 }
 
 .boton-registro{
-    background-color: var(--color-select);
+    background-color: var(--second-color);
+    color: var(--color-text);
 }
 
 .volver{
