@@ -1,0 +1,32 @@
+:root {
+    --color-top: #9d2d29;
+    --color-select: #8d1a16;
+    --fondo: whitesmoke;
+    --color-text: white;
+    --second-color: #282828;
+}
+
+@media (max-width: 992px) {
+    body{
+        max-width: 992px;
+        width: 100%;
+    }
+
+    .navbar{
+        gap: 20px;
+        box-shadow: 0;
+        border-bottom: var(--color-top);
+    }
+
+    .navbar-list{
+        position: absolute;
+        top: 75px;
+        background-color: var(--color-top);
+        flex-direction: column;
+        width: 40%;
+        left: 5%;
+        right: 5%;
+        align-items: flex-start;
+        padding-left: 200px;
+    }
+}
