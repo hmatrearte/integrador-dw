@@ -191,7 +191,7 @@
 
 .info-compra-list, .cat-list{
   flex-wrap: wrap;
-  margin: 450px 0 450px 0;
+  margin: 500px 0 600px 0;
   gap: 80px;
 }
 
@@ -215,7 +215,7 @@
 }
 
 footer{
-  margin-top: 85%;
+  margin-top: 100%;
 }
 
 }
@@ -225,4 +225,17 @@ footer{
     max-width: 375px;
     width: 100%;
   }
+
+  .redes{
+    width: 90%;
+  }
+
+  .redes-list{
+    width: 90%;
+}
+
+.redes iframe{
+  width: 80%;
+  height: auto;
+}
 }
