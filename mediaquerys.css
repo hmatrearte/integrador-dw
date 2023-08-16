@@ -12,6 +12,8 @@
     width: 100%;
   }
 
+  /* ------- NAVBAR ---------------*/
+
   .navbar {
     gap: 20px;
     box-shadow: 0;
@@ -93,6 +95,8 @@
     overflow-y: scroll;
   }
 
+/* -------------- CONTACTO---------------- */
+
   .contact-container {
     gap:5%;
   }
@@ -112,6 +116,8 @@
     width: 100%;
   }
 
+  /* ------- NAVBAR ---------------*/
+
   .navbar{
     max-width: 768px;
     width: 100%;
@@ -122,6 +128,8 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  /* ----------- INFO COMPRA ----------- */
 
   .cat-list,
   .info-compra-list {
@@ -140,6 +148,9 @@
   .info-compra-img {
     max-width: 190px;
   }
+
+  /* -------------- CONTACTO---------------- */
+
   #contact {
     max-width: 768px;
     width: 100%;
@@ -152,8 +163,9 @@
   main {
     max-width: 576px;
     width: 100%;
-  }
+  }  
 
+  /* ------- NAVBAR ---------------*/ 
 
   .navbar{
     width: 100%;
@@ -171,6 +183,9 @@
     height: 100%;
   }
 
+ /* ----------- Nosotros-------------- */
+
+
   #nosotros{
     max-width: 578px;
     width: 90%;
@@ -186,6 +201,8 @@
   width: 100%;
   margin-top: 5%;
 }
+
+/* ----------- INFO COMPRA ----------- */
 
 #info-compra{
   max-height: 1300px;
@@ -205,6 +222,8 @@
 .info-compra-img{
   max-width: 300px;
 }
+
+/* -------------- CONTACTO---------------- */
 
 #contact {
   max-width: 576px;
@@ -242,6 +261,8 @@ footer{
   .titulo{
     padding: 5px;
   }
+
+  /* -------------- CONTACTO---------------- */
 
   .redes{
     width: 90%;
