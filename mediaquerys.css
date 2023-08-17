@@ -107,7 +107,19 @@
   margin: 0 auto;
 }
 
+/* -------------- LOGIN---------------- */
+
+.container-login{
+  max-width: 992px;
+  width: 40%;
+  height: auto;
 }
+
+.container-login input{
+  width: 90%;
+}
+}
+
 
 
 @media (max-width: 768px) {
@@ -156,7 +168,18 @@
     width: 100%;
     margin: 0 auto;
   }
+  /* -------------- LOGIN---------------- */
+  .container-login{
+    width: 70%;
+  }
+  .container-login input{
+    width: 90%;
+  }
 
+  .container-login input::placeholder{
+    font-size: 0.8rem;
+  }
+    
 }
 
 @media (max-width: 576px) {
@@ -181,6 +204,10 @@
     max-width: 576px;
     max-height: 1000px;
     height: 100%;
+  }
+  /* ----------- PRODUCTOS-------------- */
+  .cards{
+    width: 90%;
   }
 
  /* ----------- Nosotros-------------- */
@@ -240,6 +267,20 @@ footer{
   margin-top: 100%;
 }
 
+/* -------------- LOGIN---------------- */
+  
+.container-login{
+  width: 70%;
+}
+
+.container-login input{
+  width: 90%;
+}
+
+.container-login input::placeholder{
+  font-size: 0.8rem;
+}
+
 }
 
 @media (max-width: 375px) {
@@ -262,6 +303,27 @@ footer{
     padding: 5px;
   }
 
+
+ /* ----------- PRODUCTOS-------------- */
+  .cards{
+  width: 90%;
+}
+  .products-card{
+    border: none;
+  }
+
+  .product-img{
+  width: 200px;
+  margin: 0 auto;
+}
+/* -------------- FAQS---------------- */
+  .faqs-conteiner{
+    margin: 0;
+  }
+  .titulo{
+    width: 100%;
+  }
+
   /* -------------- CONTACTO---------------- */
 
   .redes{
@@ -276,4 +338,7 @@ footer{
   width: 80%;
   height: auto;
 }
+
+/* -------------- LOGIN---------------- */
+
 }
